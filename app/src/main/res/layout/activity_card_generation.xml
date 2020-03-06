@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardGenerationActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_cardgenerationactivity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/orange"
+            app:titleTextColor="@color/white"
+            app:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:title="EmployeFy"
+            app:popupTheme="@style/MenuStyle"
+            ></androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/employeCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardbackground">
+
+            <ImageView
+                android:id="@+id/card_ProfileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.059" />
+
+            <TextView
+                android:id="@+id/card_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="72dp"
+                android:text="Firstname"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_ProfileImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.023"
+                app:layout_constraintStart_toEndOf="@+id/card_ProfileImage" />
+
+            <TextView
+                android:id="@+id/card_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Lastname"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_firstname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.073"
+                app:layout_constraintStart_toEndOf="@+id/card_firstname"
+                app:layout_constraintTop_toTopOf="@+id/card_firstname" />
+
+            <TextView
+                android:id="@+id/card_contactno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="52dp"
+                android:text="Contact No"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/card_address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.037"
+                app:layout_constraintStart_toEndOf="@+id/card_ProfileImage" />
+
+            <TextView
+                android:id="@+id/card_address"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="Address"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.307"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_ProfileImage" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.307"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_address"
+                app:layout_constraintVertical_bias="0.083">
+
+                <TextView
+                    android:id="@+id/card_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textColor="@color/darkblue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/card_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=",State"
+                    android:textColor="@color/darkblue"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/card_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=",Country"
+                    android:textColor="@color/darkblue"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:layout_marginEnd="8dp"
+                android:text="Powerd By ICT_Infracon"
+                android:textColor="@color/darkblue"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.692"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/download_Btn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/employeCardLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/button"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:text="Download"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:visibility="gone"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sorryCard"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sademoji"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/darkblue"
+            android:text="Sorry, Your request is still pending"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="180dp"
+            android:textStyle="bold"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

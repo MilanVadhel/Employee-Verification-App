@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+
+
+    <style name="splashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/transperent</item>
+        <item name="colorAccent">@color/orange</item>
+    </style>
+    <style name="selectionTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/transperent</item>
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
+    <style name="MenuStyle">
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="colorAccent">@color/darkblue</item>
+    </style>
+
+    <style name="cardgenerationActivityTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkblue</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="colorControlNormal">@color/darkblue</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfileActivity"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_profileActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/orange"
+        app:titleTextColor="@color/white"
+        app:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:title="EmployeFy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        ></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profil_picture"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="First Name"
+            android:textColor="@color/darkblue"
+            android:textSize="20dp"
+            />
+            <TextView
+                android:id="@+id/Lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/ContactNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact No"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/darkblue"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/darkblue"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/darkblue"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="City"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/darkblue"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/State"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="State"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/darkblue"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/Country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/darkblue"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/Verify_Btn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:elevation="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
